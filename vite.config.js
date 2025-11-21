@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE ?? '/city-house-landing/',
+  // ВАЖНО: для собственного домена — всегда '/'
+  base: '/',
   server: {
     host: '0.0.0.0',
     allowedHosts: [
